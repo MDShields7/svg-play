@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import chroma from 'chroma-js'
 
-export default class Swatch extends Component {
+export default class SwatchSvg extends Component {
   constructor(props) {
     super(props);
     this.state = {
