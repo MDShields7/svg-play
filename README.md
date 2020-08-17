@@ -6,14 +6,17 @@
 
 ### Import the SVG file into React component
 svg-file.js
-```<svg>
+```
+<svg>
     <g>
         <path d='...' fill='...'/>
     </g>
-</svg>```
+</svg>
+```
 
 Parent.js // Component displaying svg
-```import mySvg from './images/svg-file.svg
+```
+import mySvg from './images/svg-file.svg
 
 export default class Parent extends Component{
     constructor(){
@@ -24,11 +27,13 @@ export default class Parent extends Component{
             <img src={mySvg}>
         )
     }
-}```
+}
+```
 
 ### A React Component -place SVG text inside of JSX
 mySVG.js
-```export default class Svg extends Component{
+```
+export default class Svg extends Component{
     constructor(){
         this.state = {}
     }
@@ -41,11 +46,13 @@ mySVG.js
             </svg>
         )
     }
-}```
+}
+```
 
 
 ### Using JSX to place variables - WORKS
-```export default class Svg extends Component{
+```
+export default class Svg extends Component{
     constructor(){
         this.state = {
             myColor1: '#9E2A2B'
@@ -64,10 +71,12 @@ mySVG.js
             </svg>
         )
     }
-}```
+}
+```
 
 ### Keeping entire SVG in state, and rendering from single variable - WORKS
-```export default class Svg extends Component{
+```
+export default class Svg extends Component{
     constructor(){
         this.state = {
             svg: <svg>
@@ -86,10 +95,12 @@ mySVG.js
         </>
         )
     }
-}```
+}
+```
 
 ### Keeping paths in array, and mapping over array in svg - DOES NOT WORK
-```export default class Svg extends Component{
+```
+export default class Svg extends Component{
     constructor(){
         this.state = {
             pathArr: [
@@ -108,10 +119,12 @@ mySVG.js
         </svg>
         )
     }
-}```
+}
+```
 
 ### Keeping paths in array, and placing w/ brakcet notation in svg - DOES NOT WORK
-```export default class Svg extends Component{
+```
+export default class Svg extends Component{
     constructor(){
         this.state = {
             pathArr: [
@@ -132,4 +145,5 @@ mySVG.js
         </svg>
         )
     }
-}```
+}
+```
