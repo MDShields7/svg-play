@@ -23,7 +23,9 @@ export default class SwatchSvgInState extends Component {
     const { svg } = this.state
     console.log('svg',svg)
     return (
+    <>
       {svg}
+    </>
     )
   }
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import SwatchSvg from './components/SwatchSvg'
+import Swatch2 from './components/mawashi-copy.svg'
 import SwatchSvgMap from './components/SwatchSvg'
 import SwatchSvgInState from './components/SwatchSvgInState'
 import SwatchSvgMapAttributes from './components/SwatchSvgMapAttributes'
@@ -12,11 +13,13 @@ function App() {
       </header>
       <p>React component rendering Svg</p>
       <SwatchSvg color={ '#9E2A2B' }/><br/>
+      <p>React component rendering Svg 2</p>
+      <img src={Swatch2} /><br/>
       {/* <p>React component rendering Svg mapped paths</p>
-      <SwatchSvgMap />
+      <SwatchSvgMap /> */}
       <p>React component rendering Svg from state</p>
       <SwatchSvgInState />
-      <p>React component rendering Svg mapped path attributes</p>
+      {/* <p>React component rendering Svg mapped path attributes</p>
       <SwatchSvgMapAttributes /> */}
     </div>
   );
