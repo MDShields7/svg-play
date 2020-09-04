@@ -1,6 +1,6 @@
 
 
-# Exploring SVG componenets in React
+# Exploring SVG components in React
 
 ## How to render svgs in React
 
